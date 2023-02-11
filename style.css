@@ -105,10 +105,7 @@ body {
 /* Footer */
 
 .footer p {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 725px);
+    margin-top: 20px;
 }
 
 
