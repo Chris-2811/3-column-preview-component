@@ -34,6 +34,8 @@ body {
     height: 500px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .card {
@@ -103,7 +105,10 @@ body {
 /* Footer */
 
 .footer p {
-    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 725px);
 }
 
 
