@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+ /* Primary */
+
+ --bright-orange: hsl(31, 77%, 52%);
+ --dark-cyan: hsl(184, 100%, 22%);
+ --varydark-cyan: hsl(179, 100%, 13%);
+
+ /* Neutral */
+
+ --transparent-white: hsla(0, 0%, 100%, 0.75);
+ --verylight-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    background: #f2f2f2;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 920px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    padding: 48px;
+    color: #f2f2f2;
+}
+
+.card h2 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 35px 0 25px 0;
+}
+
+.card p {
+    font-size: 15px;
+    font-weight: 400px;
+    line-height: 25px;
+    margin-bottom: 83px;
+    opacity: 0.7;
+}
+
+.card-sedans {
+    background-color: var(--bright-orange);
+}
+
+.card-suvs {
+    background-color: var(--dark-cyan);
+}
+
+.card-luxury {
+    background-color: var(--varydark-cyan);
+}
+
+.btn {
+    background-color: #f2f2f2;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    width: 146px;
+    height: 48px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    outline: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+.btn-sedans {
+    color: var(--bright-orange);
+}
+
+.btn-suvs {
+    color: var(--dark-cyan);
+}
+
+.btn-luxury {
+    color: var(--varydark-cyan);
+}
+
+/* Footer */
+
+.footer p {
+    margin-top: 20px;
+}
+
+
+@media (max-width: 375px) {
+    .container {
+        grid-template-columns: 1fr;
+        height: 1326px;
+        width: 327px;
+        margin: 88px 24px;
+    }
+
+    body {
+        height: 100%;
+    }
+}
