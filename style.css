@@ -45,10 +45,12 @@ body {
 
 .card h1 {
   font-family: "Big Shoulders Display", sans-serif;
+
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
   margin: 35px 0 25px 0;
+  line-height: 47.88px;
 }
 
 .card p {
@@ -57,6 +59,7 @@ body {
   line-height: 25px;
   margin-bottom: 83px;
   opacity: 0.7;
+  mix-blend-mode: normal;
 }
 
 .card-sedans {
@@ -77,6 +80,7 @@ body {
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;
+  display: inline-block;
   padding: 13px 31.5px;
   border: none;
   text-decoration: none;
